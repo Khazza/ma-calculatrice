@@ -71,7 +71,7 @@ const Calculator = () => {
     }
   };
   
-
+  // pouvoir utiliser le clavier pour taper
   useEffect(() => {
     const handleKeyDown = (e) => {
       switch (e.key) {

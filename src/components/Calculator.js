@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import '../styles/Calculator.css';
 
 const evaluateExpression = (expression) => {
-  const numberTokens = expression.split(/[\+\-\*\/]/);
-  const operatorTokens = expression.match(/[\+\-\*\/]/g) || [];
-  let result = parseFloat(numberTokens[0]);
+const numberTokens = expression.split(/[+\-*/]/);
+const operatorTokens = expression.match(/[+\-*/]/g) || [];
+let result = parseFloat(numberTokens[0]);
   
   for (let i = 0; i < operatorTokens.length; i++) {
     const currentNumber = parseFloat(numberTokens[i + 1]);
